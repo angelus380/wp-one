@@ -1,4 +1,5 @@
 ## ABOUT
+
 A simple wordpress theme development for one page websites.
 <br/>
 PS: For plugins and vendor used in this web build check out the .gitignore file.

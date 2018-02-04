@@ -42,34 +42,4 @@ function remove_menu_items() {
 }
 add_action( 'admin_menu', 'remove_menu_items' );
 
-#-------------------#
-# CHECK USER DEVICE #
-#-------------------#
-
-# return false if is ipad or tablet
-function is_mobile() {
-
-  $server    = $_SERVER['HTTP_USER_AGENT'];
-	$ipod    	 = stripos( $server, 'ipod' );
-	$iphone  	 = stripos( $server, 'iphone' );
-	$ipad    	 = stripos( $server, 'ipad' );
-	$android 	 = stripos( $server, 'android' );
-	$webOS   	 = stripos( $server, 'webOS' );
-  $tablet 	 = stripos( $server, 'tablet' );
-  $not_empty = !empty( $server );
-
-  # return false if is ipad
-  if ( $not_empty && false !== $ipad ) :
-    return false;
-  
-  # return false if is tablet
-  elseif ( $not_empty && false !== $tablet ) :
-    return false;
-
-  else :
-    return wp_is_mobile();
-
-  endif;
-}
-
 ?>
