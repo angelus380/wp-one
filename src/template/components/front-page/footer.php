@@ -6,12 +6,12 @@
 	fields
 
 */
-$address 		 = get_field( 'address' );
-$name 			 = get_field( 'name' );
-$phone 			 = get_field( 'phone' );
-$skype 			 = get_field( 'skype' );
-$email 			 = get_field( 'email' );
-$facebook 	 = get_field( 'facebook' ); ?>
+$address 	= get_field( 'address' );
+$name 		= get_field( 'name' );
+$phone 		= get_field( 'phone' );
+$skype 		= get_field( 'skype' );
+$email 		= get_field( 'email' );
+$facebook = get_field( 'facebook' ); ?>
 
 <footer>
 	<div class="container text-center">

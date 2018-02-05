@@ -13,6 +13,7 @@ $bg_img 	= get_field( 'bg_img' );
 $phone 		= get_field( 'phone' );
 $email 		= get_field( 'email' );
 $facebook = get_field( 'facebook' );
+$linkedin = get_field( 'linkedin' );
 
 if ( !empty( $bg_img ) ) {
 	$bg = 'Style="background-image: url('.$bg_img['sizes']['large'].'); "';
@@ -24,6 +25,9 @@ if ( !empty( $bg_img ) ) {
 		<ul class="fixed">
 		<?php if ( !empty( $facebook ) ) : ?>
 			<li class="d-inline-block"><a href="<?php echo $facebook; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<?php endif; ?>
+		<?php if ( !empty( $linkedin ) ) : ?>
+			<li class="d-inline-block"><a href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 		<?php endif; ?>
 		<?php if ( !empty( $email ) ) : ?>
 			<li class="d-inline-block"><a href="mailto: <?php echo $email; ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>

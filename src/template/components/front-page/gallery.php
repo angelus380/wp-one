@@ -6,7 +6,7 @@
 	fields
 
 */
-$gallery = 'gallery_images'; ?>
+$gallery = 'gallery'; ?>
 
 <section class="pb-0">
 <div class="row">
@@ -14,7 +14,7 @@ $gallery = 'gallery_images'; ?>
 if ( have_rows( $gallery ) ) :
 	while ( have_rows( $gallery ) ) : the_row();
 		$gallery_img = get_sub_field( 'gallery_image' );
-		$text_img = get_sub_field( 'img_text', false, false ); ?>
+		$text_img = get_sub_field( 'gallery_image_text', false, false ); ?>
 
 		<div class="col-12 col-lg-6 gallery">
 			<div style="background-image: url('<?php echo $gallery_img['sizes']['large']; ?>');"></div>

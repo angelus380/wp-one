@@ -6,9 +6,9 @@
 	fields
 
 */
-$title 			 = get_field( 'title' );
-$text_area 	 = get_field( 'text_area' );
-$section_img = get_field( 'img_section' ); ?>
+$title 			 = get_field( 'about_title' );
+$text_area 	 = get_field( 'about_text' );
+$section_img = get_field( 'about_img' ); ?>
 
 <section class="hero">
 	<div class="row">
